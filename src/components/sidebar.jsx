@@ -26,7 +26,7 @@ function Sidebar (){
    
     return(
         <>
-        <motion.section className={`left-0 fixed bottom-0 transition-all duration-300 ease-in-out pt-[10px]  pl-[10px] top-0  h-screen bg-gray-800 text-white  flex flex-col ${sidebaropen ? "w-[200px]" : "w-[84px]"}`} >
+        <motion.section className={`left-0 relative  transition-all duration-300 ease-in-out pt-[10px]  pl-[10px] top-0  h-screen bg-gray-800 text-white  flex flex-col ${sidebaropen ? "w-[200px]" : "w-[84px]"}`} >
             <div className="flex flex-col border-r border-gray-700 h-full   ">
                    <motion.button  className="text-white  rounded-[50%] p-2  mb-4" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}  onClick={() => setSidebarOpen(!sidebaropen)}>
                              <Menu size="24"/>
@@ -35,11 +35,11 @@ function Sidebar (){
                    <nav className="flex-grow mt-8 flex flex-col items-center ">
                                        {
                             SidebarItems.map((links,index)=>(
-                            <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
-                                    <links.icon size={24}  style={{color:links.color, minWidth:"20px"}} />
+                       <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
+                              <links.icon size={24}  style={{color:links.color, minWidth:"20px"}} />
                                     <AnimatePresence>
                                         {sidebaropen && (
-                                            <motion.p className={`font-medium text-[18px] text-white`}
+                                            <motion.p key={index} className={`font-medium text-[18px] text-white`}
                                             initial={{ opacity: 0, width: 0 }}
                                                 animate={{ opacity: 1, width: "auto" }}
                                                 exit={{ opacity: 0, width: 0 }}
@@ -48,9 +48,11 @@ function Sidebar (){
                                             </motion.p>
                                     )}
                                     </AnimatePresence>
+                                 
                                 
 
                                 </motion.div>
+                             
                             
                  
 

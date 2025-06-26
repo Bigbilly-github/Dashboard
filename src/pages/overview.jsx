@@ -2,11 +2,18 @@
 
 import { Link } from "react-router-dom";
 import Sidebar from "../components/sidebar";
+import Header from "../components/header";
 
 function Overview() {
   return (
       <>
-       <Sidebar/>
+       <div className='flex-1 flex items-start overflow-auto relative z-10'>
+      <Sidebar/>
+     
+         <Header title="overview"/>
+
+      </div>
+
       </>
   );
 }
