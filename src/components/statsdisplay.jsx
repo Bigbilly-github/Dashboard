@@ -1,8 +1,9 @@
 
 
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
-import Stats from "../components/stats";
+import Stats from "./global/stats";
 import {  motion } from "framer-motion";
+import Salesoverviewchart from "./salesoverviewchart";
 function StatsDisplay (){
 
     return(
@@ -19,8 +20,16 @@ function StatsDisplay (){
                      <Stats name="Total Products" Icon={ShoppingBag} value="567" color="#EC4899" />
                      <Stats name="Conversion Rate" Icon={BarChart2} value="12.5%" color="#108981" />
 
+                  
+
+
 
             </motion.div>
+               <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+                        <Salesoverviewchart/>
+                         <Salesoverviewchart/>
+
+                    </div>
 
         </section>
         </>
