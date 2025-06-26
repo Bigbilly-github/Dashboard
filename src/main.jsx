@@ -5,7 +5,7 @@ import './index.css'
 
 import Overview from './pages/overview.jsx'
 import ProductPage from './pages/products.jsx'
-import Sidebar from './components/sidebar.jsx'
+import Sidebar from './components/global/sidebar.jsx'
 
 
 const router = createBrowserRouter([
