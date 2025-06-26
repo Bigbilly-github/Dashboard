@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 function Sidebar (){
-    const [sidebaropen,setSidebarOpen] = useState(false);
+    const [sidebaropen,setSidebarOpen] = useState(true);
     const SidebarItems = [
         {
 		name: "Overview",
@@ -26,7 +26,7 @@ function Sidebar (){
    
     return(
         <>
-        <motion.section className={`left-0 relative  transition-all duration-300 ease-in-out pt-[10px]  pl-[10px] top-0  h-screen bg-gray-800 text-white  flex flex-col ${sidebaropen ? "w-[200px]" : "w-[84px]"}`} >
+        <motion.section className={`left-0 relative  transition-all duration-300 ease-in-out pt-[10px]  pl-[10px] top-0  h-screen bg-gray-800 text-white  flex flex-col ${sidebaropen ? "w-[200px]" : "w-[64px]"}`} >
             <div className="flex flex-col border-r border-gray-700 h-full   ">
                    <motion.button  className="text-white  rounded-[50%] p-2  mb-4" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}  onClick={() => setSidebarOpen(!sidebaropen)}>
                              <Menu size="24"/>
@@ -43,7 +43,7 @@ function Sidebar (){
                                             initial={{ opacity: 0, width: 0 }}
                                                 animate={{ opacity: 1, width: "auto" }}
                                                 exit={{ opacity: 0, width: 0 }}
-                                                transition={{ duration: 0.2, delay: 0.3 }}>
+                                                transition={{ duration: 0.2, delay: 0.1 }}>
                                                 {links.name}
                                             </motion.p>
                                     )}

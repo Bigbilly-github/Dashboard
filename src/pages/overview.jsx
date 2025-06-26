@@ -8,9 +8,9 @@ function Overview() {
   return (
       <>
        <div className='flex-1 flex items-start overflow-auto relative z-10'>
-      <Sidebar/>
+             <Sidebar/>
      
-         <Header title="overview"/>
+         <Header title="Overview"/>
 
       </div>
 
