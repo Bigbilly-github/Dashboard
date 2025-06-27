@@ -3,9 +3,9 @@
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import Stats from "./global/stats";
 import {  motion } from "framer-motion";
-import Salesoverviewchart from "./salesoverviewchart";
-import Categorydistributionchart from "./categorydistributionchart";
-import Saleschannelchart from "./Saleschannelchart";
+import Salesoverviewchart from "./overview/salesoverviewchart";
+import Categorydistributionchart from "./overview/categorydistributionchart";
+import Saleschannelchart from "./overview/Saleschannelchart";
 function StatsDisplay (){
 
     return(
@@ -30,9 +30,10 @@ function StatsDisplay (){
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                         <Salesoverviewchart/>
                       <Categorydistributionchart/>
-                      <Saleschannelchart/>
+                     
 
                     </div>
+                     <Saleschannelchart/>
 
         </section>
         </>
