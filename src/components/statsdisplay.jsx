@@ -4,6 +4,8 @@ import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import Stats from "./global/stats";
 import {  motion } from "framer-motion";
 import Salesoverviewchart from "./salesoverviewchart";
+import Categorydistributionchart from "./categorydistributionchart";
+import Saleschannelchart from "./Saleschannelchart";
 function StatsDisplay (){
 
     return(
@@ -27,7 +29,8 @@ function StatsDisplay (){
             </motion.div>
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                         <Salesoverviewchart/>
-                         <Salesoverviewchart/>
+                      <Categorydistributionchart/>
+                      <Saleschannelchart/>
 
                     </div>
 
