@@ -35,7 +35,7 @@ function Sidebar (){
                    <nav className="flex-grow mt-8 flex flex-col items-center ">
                                        {
                             SidebarItems.map((links,index)=>(
-                       <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
+                   <Link to={links.href}>  <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
                               <links.icon size={24}  style={{color:links.color, minWidth:"20px"}} />
                                     <AnimatePresence>
                                         {sidebaropen && (
@@ -51,7 +51,7 @@ function Sidebar (){
                                  
                                 
 
-                                </motion.div>
+                                </motion.div></Link>  
                              
                             
                  

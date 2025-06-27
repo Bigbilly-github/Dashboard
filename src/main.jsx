@@ -6,6 +6,11 @@ import './index.css'
 import Overview from './pages/overview.jsx'
 import ProductPage from './pages/products.jsx'
 import Sidebar from './components/global/sidebar.jsx'
+import Analytics from './pages/Analytics.jsx'
+import Users from './pages/Users.jsx'
+import Orders from './pages/orders.jsx'
+import Settings from './pages/Settings.jsx'
+import Sales from './pages/sales.jsx'
 
 
 const router = createBrowserRouter([
@@ -17,6 +22,31 @@ const router = createBrowserRouter([
    {
     path: "/products",
     element: <ProductPage />
+   
+  },
+   {
+    path: "/analytics",
+    element:< Analytics />
+   
+  },
+   {
+    path: "/users",
+    element: <Users />
+   
+  },
+   {
+    path: "/orders",
+    element: <Orders />
+   
+  },
+   {
+    path: "/settings",
+    element: <Settings />
+   
+  },
+   {
+    path: "/sales",
+    element: <Sales />
    
   },
  
