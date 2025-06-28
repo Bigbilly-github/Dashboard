@@ -7,7 +7,7 @@ import Sidebar from "../components/global/sidebar";
 import Header from "../components/global/header";
 
 import StatsDisplay from "../components/statsdisplay";
-import Productstatsdisplay from "../components/products/productstatsdisplay";
+import Productstatsdisplay from "../components/products/Productstatsdisplay";
 
 
 function ProductPage() {
