@@ -1,11 +1,10 @@
 import React from 'react'
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import Stats from "../global/stats";
-import {  motion } from "framer-motion";
-import Salesoverviewchart from "../overview/salesoverviewchart";
+
 import Categorydistributionchart from "../overview/categorydistributionchart";
-import Saleschannelchart from '../overview/Saleschannelchart';
-import Salestrendcharts from './salestrendcharts';
+
+import Salestrendcharts from './Salestrendcharts';
 import Productstable from './Productstable';
 
 
