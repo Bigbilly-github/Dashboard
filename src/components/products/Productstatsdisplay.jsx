@@ -1,7 +1,7 @@
 import React from 'react'
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import Stats from "../global/stats";
-
+import {motion} from 'framer-motion'
 import Categorydistributionchart from "../overview/categorydistributionchart";
 
 import Salestrendcharts from './Salestrendcharts';
