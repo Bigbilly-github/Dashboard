@@ -1,7 +1,7 @@
 import { BarChart2, Bus, DollarSign, Menu, Settings, ShoppingBag, ShoppingCart, Train, TrendingUp, Users } from "lucide-react"
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -35,7 +35,9 @@ function Sidebar (){
                    <nav className="flex-grow mt-8 flex flex-col items-center ">
                                        {
                             SidebarItems.map((links,index)=>(
-                   <Link to={links.href}>  <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
+                   <NavLink to={links.href} className={({ isActive }) =>`
+                   ${ isActive ? "bg-slate-900 rounded-lg" : ""
+                  }`}>  <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
                               <links.icon size={24}  style={{color:links.color, minWidth:"20px"}} />
                                     <AnimatePresence>
                                         {sidebaropen && (
@@ -51,7 +53,7 @@ function Sidebar (){
                                  
                                 
 
-                                </motion.div></Link>  
+                                </motion.div></NavLink>  
                              
                             
                  
