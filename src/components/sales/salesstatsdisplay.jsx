@@ -3,6 +3,8 @@ import Stats from "../global/stats";
 import {motion} from 'framer-motion'
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from 'lucide-react';
 import Salesoverviewchart from './Salesoverviewchart';
+import Categorydistributionchart from '../overview/categorydistributionchart';
+import Dailysalestrend from './Dailysalestrend';
 
 const Salesstatsdisplay = () => {
     const salesStats = {
@@ -44,6 +46,8 @@ const Salesstatsdisplay = () => {
             <Salesoverviewchart/>
                  
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+                <Categorydistributionchart/>
+                <Dailysalestrend/>
                       
                      
 
