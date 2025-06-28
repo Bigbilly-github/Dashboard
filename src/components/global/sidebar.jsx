@@ -36,7 +36,7 @@ function Sidebar (){
                                        {
                             SidebarItems.map((links,index)=>(
                    <NavLink to={links.href} className={({ isActive }) =>`
-                   ${ isActive ? "bg-slate-900 rounded-lg" : ""
+                   ${ isActive ? "bg-slate-700 rounded-lg" : ""
                   }`}>  <motion.div key={index} whileHover={{scale: 1.1}} className={`flex  cursor-pointer items-center gap-[10px] p-4 justify-center transition-colors rounded-lg hover:bg-slate-900`}>
                               <links.icon size={24}  style={{color:links.color, minWidth:"20px"}} />
                                     <AnimatePresence>
