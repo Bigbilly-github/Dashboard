@@ -21,7 +21,7 @@ function ProductPage() {
                    <Productstatsdisplay/>
                    
                 </main>
-
+        
             </div>
         
 
