@@ -3,6 +3,8 @@ import { UserCheck, UserPlus,  UsersIcon, UserX } from "lucide-react";
 import Stats from "../global/stats";
 import {  motion } from "framer-motion";
 import Usertable from './Usertable';
+import Usergrowthcharts from './Usergrowthcharts';
+import Useractivitychart from './useractivitychart';
 
 
 
@@ -47,6 +49,8 @@ const Usersdisplay = () => {
             <Usertable/>
                    
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+                <Usergrowthcharts/>
+                <Useractivitychart/>
                       
                      
 
