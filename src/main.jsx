@@ -5,12 +5,12 @@ import './index.css'
 
 import Overview from './pages/overview.jsx'
 import ProductPage from './pages/products.jsx'
-import Sidebar from './components/global/sidebar.jsx'
+
 import Analytics from './pages/Analytics.jsx'
 import Users from './pages/Users.jsx'
 import Orders from './pages/Orders.jsx'
 import Settings from './pages/Settings.jsx'
-import Sales from './pages/sales.jsx'
+import Sales from './pages/Sales.jsx'
 
 
 const router = createBrowserRouter([
