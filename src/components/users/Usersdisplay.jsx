@@ -5,6 +5,7 @@ import {  motion } from "framer-motion";
 import Usertable from './Usertable';
 import Usergrowthcharts from './Usergrowthcharts';
 import Useractivitychart from './useractivitychart';
+import Userdemocharts from './Userdemocharts';
 
 
 
@@ -51,10 +52,12 @@ const Usersdisplay = () => {
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                 <Usergrowthcharts/>
                 <Useractivitychart/>
+
                       
                      
 
                     </div>
+                    <Userdemocharts/>
                     
 
         </section>
