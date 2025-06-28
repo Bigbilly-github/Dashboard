@@ -6,6 +6,7 @@ import Salesoverviewchart from "../overview/salesoverviewchart";
 import Categorydistributionchart from "../overview/categorydistributionchart";
 import Saleschannelchart from '../overview/Saleschannelchart';
 import Salestrendcharts from './salestrendcharts';
+import Productstable from './Productstable';
 
 
 const Productstatsdisplay = () => {
@@ -28,6 +29,7 @@ const Productstatsdisplay = () => {
 
 
             </motion.div>
+                    <Productstable/>
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                       <Salestrendcharts/>
                       <Categorydistributionchart/>
