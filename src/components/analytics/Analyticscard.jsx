@@ -33,7 +33,7 @@ const Analyticscard = () => {
               p-3 rounded-full bg-opacity-20 ${item.change >= 0 ? "bg-green-500" : "bg-red-500"}
               `}
 						>
-							<item.icon className={`size-6  ${item.change >= 0 ? "text-green-500" : "text-red-500"}`} />
+							<item.icon className={`size-6  `} style={item.change >= 0 ? { color: "text-green-500" } : { color: "text-red-500" }} />
 						</div>
 					</div>
 					<div
