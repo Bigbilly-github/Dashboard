@@ -36,7 +36,7 @@ const Ordersstatdisplay = () => {
 
             </motion.div>
                    
-               <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+               <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8'>
                 <DailyOrders/>
                 <OrderDistribution />
                       
