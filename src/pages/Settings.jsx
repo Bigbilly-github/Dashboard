@@ -1,5 +1,7 @@
 import Header from "../components/global/header";
 import Sidebar from "../components/global/sidebar";
+import DangerZone from "../components/settings/Dangerzone";
+
 import Notifications from "../components/settings/Notifcations";
 import Profile from "../components/settings/profile";
 import Security from "../components/settings/security";
@@ -13,6 +15,8 @@ const Settings = () => {
                    <Profile />
                    <Notifications/>
                    <Security/>
+                   <DangerZone/>
+                  
                    
                 </main>
 
