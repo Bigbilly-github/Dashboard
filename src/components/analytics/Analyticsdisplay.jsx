@@ -4,6 +4,7 @@ import Usertable from "../users/Usertable";
 import Analyticscard from "./Analyticscard";
 import ChannelPerformance from "./Channelperfomance";
 import CustomerSegmentation from "./CustomerSegmentationData";
+import AIPoweredInsights from "./Insights";
 import ProductPerformance from "./Productperfomance";
 import RevenueChart from "./Revenuechart";
 import UserRetention from "./Userretention";
@@ -21,6 +22,7 @@ const Analyticsdisplay = () => {
        
          
       </div>
+      <AIPoweredInsights />
     </section>
   );
 };
