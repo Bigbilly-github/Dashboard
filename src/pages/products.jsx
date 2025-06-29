@@ -6,7 +6,7 @@
 import Sidebar from "../components/global/sidebar";
 import Header from "../components/global/header";
 
-import StatsDisplay from "../components/statsdisplay";
+import StatsDisplay from "../components/overview/statsdisplay";
 import Productstatsdisplay from "../components/products/Productstatsdisplay";
 
 

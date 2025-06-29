@@ -5,7 +5,7 @@ import Sidebar from "../components/global/sidebar";
 import Header from "../components/global/header";
 
 
-import StatsDisplay from "../components/statsdisplay";
+import StatsDisplay from "../components/overview/statsdisplay";
 
 function Overview() {
   return (
