@@ -35,7 +35,7 @@ const Productstable = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
       >
-        <div className='flex items-center justify-between mb-6'>
+        <div className='flex sm:items-center sm:flex-row flex-col justify-between mb-6'>
            <h1 className="text-xl font-semibold text-gray-100 mb-8">
             Sales Overview
             </h1>
