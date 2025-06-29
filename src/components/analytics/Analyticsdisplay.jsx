@@ -3,6 +3,7 @@
 import Usertable from "../users/Usertable";
 import Analyticscard from "./Analyticscard";
 import ChannelPerformance from "./Channelperfomance";
+import CustomerSegmentation from "./CustomerSegmentationData";
 import ProductPerformance from "./Productperfomance";
 import RevenueChart from "./Revenuechart";
 import UserRetention from "./Userretention";
@@ -16,6 +17,7 @@ const Analyticsdisplay = () => {
         <ChannelPerformance/>
         <ProductPerformance/>
         <UserRetention/>
+        <CustomerSegmentation/>
        
          
       </div>
