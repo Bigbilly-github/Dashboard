@@ -4,6 +4,7 @@ import Stats from "../global/stats";
 import {motion} from 'framer-motion'
 import DailyOrders from './Dailyorders';
 import OrderDistribution from './Orderdistribution';
+import OrdersTable from './Orderstable';
 
 const Ordersstatdisplay = () => {
     const orderStats = {
@@ -42,6 +43,7 @@ const Ordersstatdisplay = () => {
                      
 
                     </div>
+                    <OrdersTable/>
                     
 
         </section>
