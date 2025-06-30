@@ -1,5 +1,5 @@
 import { User } from "lucide-react";
-import SettingSection from "./SettingSection";
+import SettingSection from "./Settingsection";
 
 const Profile = () => {
 	return (
