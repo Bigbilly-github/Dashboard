@@ -23,7 +23,7 @@ const RevenueChart = () => {
 			transition={{ delay: 0.2 }}
 		>
 			<div className='flex sm:items-center sm:flex-row flex-col justify-between mb-6'>
-				<h2 className='text-xl font-semibold text-gray-100'>Revenue vs Target</h2>
+				<h2 className='text-xl font-semibold text-gray-100 mb-6 sm:mb-0'>Revenue vs Target</h2>
 				<select
 					className='bg-gray-700 text-white rounded-md px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500'
 					value={selectedTimeRange}
