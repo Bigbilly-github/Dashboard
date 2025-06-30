@@ -26,13 +26,13 @@ function Sidebar (){
    
     return(
         <>
-        <motion.section className={`left-0 relative transition-all duration-300 ease-in-out pt-[10px]  pl-[10px] top-0  h-screen bg-gray-800 text-white  flex flex-col ${sidebaropen ? "w-[200px]" : "w-[64px]"}`} >
-            <div className="flex flex-col border-r border-gray-700 h-full   ">
+        <motion.section className={`left-0 relative transition-all duration-300 ease-in-out pt-[10px]  pl-[10px] top-0  h-screen bg-gray-800 text-white  flex flex-col `} >
+            <div className="flex flex-col border-r border-gray-700 h-full pr-[10px]   ">
                    <motion.button  className="text-white  rounded-[50%] p-2  mb-4" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}  onClick={() => setSidebarOpen(!sidebaropen)}>
                              <Menu size="24"/>
                    </motion.button>
 
-                   <nav className="flex-grow mt-8 flex flex-col items-center ">
+                   <nav className="flex-grow mt-8 flex flex-col items-center  ">
                                        {
                             SidebarItems.map((links,index)=>(
                    <NavLink to={links.href} className={({ isActive }) =>`
